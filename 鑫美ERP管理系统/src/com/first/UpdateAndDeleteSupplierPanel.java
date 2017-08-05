@@ -47,7 +47,7 @@ public class UpdateAndDeleteSupplierPanel extends JPanel{
 	
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	public UpdateAndDeleteSupplierPanel() {
 		// TODO Auto-generated constructor stub
 		
@@ -150,9 +150,7 @@ public class UpdateAndDeleteSupplierPanel extends JPanel{
 						ps.setObject(5, bank);
 						ps.setObject(6, wechat_Field.getText());
 						ps.setObject(7, sid);
-						System.out.println(sid);
 						int n = ps.executeUpdate();
-						System.out.println(n);
 						if(n > 0){
 							JOptionPane.showMessageDialog(null, "ÐÞ¸Ä³É¹¦");
 							Supplier.removeItem(Supplier.getSelectedItem());

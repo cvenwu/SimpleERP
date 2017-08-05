@@ -306,6 +306,7 @@ public class MainView extends JFrame implements Runnable{
 					dialog.setBounds(600, 300, 450, 400);
 					dialog.setVisible(true);
 					dialog.setResizable(false);
+					dialog.setLocationRelativeTo(null);
 					dialog.add(tab);
 				}
 			});
@@ -331,6 +332,7 @@ public class MainView extends JFrame implements Runnable{
 					dialog.setVisible(true);
 					dialog.setResizable(false);
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+					dialog.setLocationRelativeTo(null);
 					dialog.add(tab);
 				}
 			});
@@ -356,6 +358,7 @@ public class MainView extends JFrame implements Runnable{
 					dialog.setVisible(true);
 					dialog.setResizable(false);
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+					dialog.setLocationRelativeTo(null);
 					dialog.add(tab);
 				}
 				
@@ -382,6 +385,7 @@ public class MainView extends JFrame implements Runnable{
 					dialog.setVisible(true);
 					dialog.setResizable(false);
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+					dialog.setLocationRelativeTo(null);
 					dialog.add(tab);
 					
 					
@@ -412,6 +416,7 @@ public class MainView extends JFrame implements Runnable{
 					dialog.setVisible(true);
 					dialog.setResizable(false);
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+					dialog.setLocationRelativeTo(null);
 					dialog.add(tab);
 				}
 			});
@@ -438,6 +443,7 @@ public class MainView extends JFrame implements Runnable{
 					dialog.setVisible(true);
 					dialog.setResizable(false);
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+					dialog.setLocationRelativeTo(null);
 					dialog.add(tab);
 				}
 			});
@@ -457,6 +463,7 @@ public class MainView extends JFrame implements Runnable{
 					dialog.setBounds(450, 200, 900, 750);
 					dialog.setVisible(true);
 					dialog.setResizable(false);
+					dialog.setLocationRelativeTo(null);
 					dialog.add(tab);
 					
 					
@@ -493,6 +500,7 @@ public class MainView extends JFrame implements Runnable{
 					dialog.setBounds(750, 400, 400, 350);
 					dialog.setVisible(true);
 					dialog.setResizable(false);
+					dialog.setLocationRelativeTo(null);
 					dialog.add(tab);
 				}
 			});
@@ -504,6 +512,8 @@ public class MainView extends JFrame implements Runnable{
 					new QueryDestroy();
 				}
 			});
+			
+			
 			//查询统计监听事件
 				//员工信息
 				employeInfo_Label.addMouseListener(new MouseAdapter() {

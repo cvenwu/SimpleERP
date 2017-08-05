@@ -43,7 +43,7 @@ public class PurchaseManage extends JPanel {
 	
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	
 	
 	private JLabel supplierName_Label = new JLabel("供应商名称");
@@ -74,9 +74,9 @@ public class PurchaseManage extends JPanel {
 		time_Label.setBounds(580, 30, 80, 35);
 		time_Field.setBounds(680, 30, 120, 35);
 		scrollpane.setBounds(65, 90, 760, 500);
-		add.setBounds(400, 610, 100, 20);
-		addInventory.setBounds(550, 610, 100, 20);
-		deleButton.setBounds(250, 610, 100, 20);
+		add.setBounds(400, 610, 100, 35);
+		addInventory.setBounds(550, 610, 100, 35);
+		deleButton.setBounds(250, 610, 100, 35);
 		final Vector<String> header = new Vector<String>();
 		header.add("花盆编号");
 		header.add("花盆种类");
@@ -150,11 +150,9 @@ public class PurchaseManage extends JPanel {
 					for(int i = 0; i < count; i++){
 						ps.setObject(1, (Integer)table.getValueAt(i, 3) + number[i]);
 						ps.setObject(2, table.getValueAt(i, 0));
-						System.out.println("添加批处理语句" + (i + 1) + "条语句");
 						ps.addBatch();
 					}
 					ps.executeBatch();
-					System.out.println("sssssss");
 					conn.commit();
 				}catch(Exception e1){
 					try {

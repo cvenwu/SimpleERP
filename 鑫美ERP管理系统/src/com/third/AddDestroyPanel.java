@@ -43,7 +43,7 @@ public class AddDestroyPanel extends JPanel {
 	
 	private String Url = "jdbc:mysql://localhost:3306/erp";
 	private String User = "root";
-	private String Password = "yourpassword";
+	private String Password = "1018222wxw";
 	
 	public AddDestroyPanel(){
 		// TODO Auto-generated constructor stub

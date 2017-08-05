@@ -267,7 +267,6 @@ public class QueryEmpView extends JDialog{
 					}
 					text.setText(page + 1 + "");
 				}
-				System.out.println(k);
 				data.removeAllElements();
 				for (int i = page * 15; i < page * 15 +  k; i++) {
 					data.add(dataVector.get(i));

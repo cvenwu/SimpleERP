@@ -34,7 +34,7 @@ public class AddInventoryDialog extends JDialog {
 	private JButton button = new JButton("Ìí¼Ó");
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	int number1 = 0;
 	public AddInventoryDialog() {
 		// TODO Auto-generated constructor stub
@@ -66,7 +66,6 @@ public class AddInventoryDialog extends JDialog {
 			e1.printStackTrace();
 		}
 		
-		System.out.println(number1);
 		button.addActionListener(new ActionListener() {
 			
 			@Override

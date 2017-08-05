@@ -49,7 +49,7 @@ public class AddPortDialog extends JDialog{
 	
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	public AddPortDialog(PurchaseManage addPurchasePanel, final JTable table, final Vector<String> header) {
 		// TODO Auto-generated constructor stub
 		this.setTitle("添加进货花盆");
@@ -222,8 +222,6 @@ public class AddPortDialog extends JDialog{
 				vector.add(portCount);
 				vector.add(portPrice);
 				vector.add(portMaking);
-				System.out.println(portId);
-				System.out.println(vector.get(0));
 				PurchaseManage.dataVector.add(vector);
 				DefaultTableModel tableModel = new DefaultTableModel(PurchaseManage.dataVector,header);
 				table.setModel(tableModel);

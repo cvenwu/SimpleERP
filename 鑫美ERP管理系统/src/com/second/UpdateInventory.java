@@ -28,7 +28,7 @@ public class UpdateInventory extends JDialog{
 		private JButton button = new JButton("ÐÞ¸Ä");
 		private String url = "jdbc:mysql://localhost:3306/erp";
 		private String user = "root";
-		private String password = "yourpassword";
+		private String password = "1018222wxw";
 		int number1 = 0;
 		public UpdateInventory(String portId, final JTable table, final Vector<Vector<String>> data, 
 				final Vector<String> header, final int raw) {

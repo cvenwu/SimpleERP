@@ -587,7 +587,7 @@ public class MainView1 extends JFrame implements Runnable{
 				@Override
 				public void mouseClicked(MouseEvent e) {
 					// TODO Auto-generated method stub
-					new UpdatePasswordView(username, MainView1.this);
+//					new UpdatePasswordView(username, MainView1.this);
 				}
 			});
 			

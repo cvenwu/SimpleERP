@@ -47,7 +47,7 @@ import com.pojo.EmpInfo;
 public class QueryVendition extends JDialog {
 //	private String url = "jdbc:mysql://localhost:3306/erp";
 //	private String user = "root";
-//	private String password = "yourpassword";
+//	private String password = "1018222wxw";
 //	
 //	
 //	private JLabel customerId = new JLabel("客户编号");
@@ -394,7 +394,7 @@ public class QueryVendition extends JDialog {
 		    Vector<String> header ;
 			private String url = "jdbc:mysql://localhost:3306/erp";
 			private String user = "root";
-			private String password = "yourpassword";
+			private String password = "1018222wxw";
 			Vector<Vector<String>> dataVector;		//存放所有数据
 			JTextField text;						//显示当前页数
 			Vector<Vector<String>> data;			//存放所要显示的每一页的数据
@@ -777,6 +777,9 @@ public class QueryVendition extends JDialog {
 		        header1.setFont(new Font("微软雅黑", Font.PLAIN, 16));
 		        header1.setPreferredSize(new Dimension(header1.getWidth(), 35));
 		        scrollPane.setViewportView(table);
+		        
+		        
+		        this.setLocationRelativeTo(null);
 		        this.setVisible(true);
 		    }
 		    

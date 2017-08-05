@@ -17,6 +17,7 @@ import javax.swing.JTextField;
 
 import com.view.LogInView;
 import com.view.MainView;
+import com.view.MainView1;
 
 		/**
 		 * 
@@ -44,7 +45,7 @@ public class UpdatePasswordView extends JDialog{
 	//Êý¾Ý¿â
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	public UpdatePasswordView(final String username,final MainView main) {
 		// TODO Auto-generated constructor stub
 		this.setTitle("ÐÞ¸ÄÃÜÂë");

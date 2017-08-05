@@ -34,7 +34,7 @@ public class UpdatePurchase extends JDialog{
 	private JButton button = new JButton("–ﬁ∏ƒ");
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	int number1 = 0;
 	public UpdatePurchase(final String portId1, final JTable table, final Vector<Vector<String>> data, 
 			final Vector<String> header, final int raw, final QueryPurchase query) {
@@ -105,11 +105,9 @@ public class UpdatePurchase extends JDialog{
 							JOptionPane.showMessageDialog(null, "–ﬁ∏ƒ ß∞‹£¨«Î…‘∫Û‘Ÿ ‘");
 							return;
 						}
-						System.out.println(number4);
 						String sql = "update portinfo  set piNumber = ? where piId = ? ";
 						PreparedStatement ps = conn.prepareStatement(sql);
 						ps.setObject(1, Integer.parseInt(number4) + Integer.parseInt(number2)) ;
-						System.out.println(number2);
 						ps.setObject(2, portId1);
 						int n = ps.executeUpdate();
 						if(n <= 0 ){

@@ -41,7 +41,7 @@ public class AddCustomerPanel extends JPanel{
 	
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	public AddCustomerPanel() {
 		// TODO Auto-generated constructor stub
 		this.setLayout(null);
@@ -119,6 +119,7 @@ public class AddCustomerPanel extends JPanel{
 				}
 			}
 		});
+		
 		
 		this.add(customer_Name);
 		this.add(customer_Zone);

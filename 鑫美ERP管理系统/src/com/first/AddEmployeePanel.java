@@ -37,7 +37,7 @@ public class AddEmployeePanel extends JPanel {
 	
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	
 	private JLabel empName_Label = new JLabel("员工姓名");
 	private JLabel empCard_Label = new JLabel("员工身份证号码");
@@ -121,7 +121,6 @@ public class AddEmployeePanel extends JPanel {
 				Matcher matcher1 = pattern1.matcher(ePhone);
 				if(!matcher1.find()){
 					JOptionPane.showMessageDialog(null, "请检查联系方式是否正确");
-					System.out.println(ePhone);
 					return;
 				}
 				

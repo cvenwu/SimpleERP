@@ -43,7 +43,7 @@ public class LogInView  {
 	
 	private String Url = "jdbc:mysql://localhost:3306/erp";
 	private String User = "root";
-	private String Password = "yourpassword";
+	private String Password = "1018222wxw";
 
 	/**
 	 * Launch the application.
@@ -203,7 +203,7 @@ public class LogInView  {
 							JOptionPane.showMessageDialog(null, "登录成功");
 							frame.setVisible(true);
 							frame.dispose();
-							new MainView1(username,rs.getString(3));						//这里第二个参数是权限，1是管理员，0是用户
+							new MainView(username,rs.getString(3));						//这里第二个参数是权限，1是管理员，0是用户
 						}
 					}
 				}catch(Exception e1){
@@ -235,7 +235,6 @@ public class LogInView  {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				// TODO Auto-generated method stub
-				System.out.println("shubiao");
 				ImageIcon icon = new ImageIcon("image\\login_button_rover.png");
 				icon.setImage(icon.getImage().getScaledInstance(350, 60,Image.SCALE_DEFAULT));
 				lblNewLabel_1.setIcon(icon);

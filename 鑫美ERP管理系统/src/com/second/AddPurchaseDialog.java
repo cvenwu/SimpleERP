@@ -55,7 +55,7 @@ public class AddPurchaseDialog extends JDialog{
 	
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	public AddPurchaseDialog(final QueryPurchase query) {
 		// TODO Auto-generated constructor stub
 		this.setTitle("Ìí¼Ó²É¹º");

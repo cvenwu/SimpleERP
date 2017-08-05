@@ -47,7 +47,7 @@ public class UpdateAndDeleteCustomerPanel extends JPanel{
 	
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	public UpdateAndDeleteCustomerPanel() {
 		// TODO Auto-generated constructor stub
 		id_Field.setEditable(false);
@@ -135,7 +135,6 @@ public class UpdateAndDeleteCustomerPanel extends JPanel{
 						ps.setObject(5, address);
 						ps.setObject(6, customer.getCustomerId());
 						int n = ps.executeUpdate();
-						System.out.println(n);
 						String cId = customer.getCustomerId();
 						if(n > 0){
 							JOptionPane.showMessageDialog(null, "ÐÞ¸Ä³É¹¦");

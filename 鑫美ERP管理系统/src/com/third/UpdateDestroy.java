@@ -50,7 +50,7 @@ public class UpdateDestroy extends JDialog{
 	//封装数据库使用的三个参数
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	
 	public UpdateDestroy(final JTable table, final int row, final Vector<String> header, 
 			final String classify, final String name, final String portId){
@@ -134,7 +134,6 @@ public class UpdateDestroy extends JDialog{
 				}
 				Vector<Vector<String>> dataVector = new Vector<Vector<String>>();
 				
-//				System.out.println(dDate + " " + status1 + " " + " " + time1);
 				try{
 					Class.forName("com.mysql.jdbc.Driver");
 					try(

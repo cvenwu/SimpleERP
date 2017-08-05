@@ -47,7 +47,7 @@ public class UpdateVendition extends JDialog{
 	private JButton button =  new JButton("ÐÞ¸Ä");
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	int number1 = 0;
 	public UpdateVendition(final String portId, final JTable table, final Vector<Vector<String>> data, 
 			final Vector<String> header, final int raw, final QueryVendition query) {
@@ -123,17 +123,14 @@ public class UpdateVendition extends JDialog{
 					String sq = "select piNumber from portinfo where piId = ?";
 					PreparedStatement ps1 = conn.prepareStatement(sq);
 					ps1.setObject(1, portId);
-					System.out.println(portId);
 					ResultSet rs = ps1.executeQuery();
 					int number = 0;
 					while(rs.next()){
 						number = Integer.parseInt(rs.getString(1));
-						System.out.println(number + "s");
 					}
 					String sql1 = "update portinfo set piNumber = ? where piId = ?";
 					ps = conn.prepareStatement(sql1);
 					int num = number - Integer.parseInt(count) + Integer.parseInt((String) table.getValueAt(raw, 5));
-					System.out.println(Integer.parseInt((String) table.getValueAt(raw, 5)));
 					if(num < 0){
 						JOptionPane.showMessageDialog(null, "¿â´æ²»×ã");
 						return;

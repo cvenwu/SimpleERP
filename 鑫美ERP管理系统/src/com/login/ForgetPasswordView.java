@@ -34,7 +34,7 @@ public class ForgetPasswordView extends JDialog{
 	//Êý¾Ý¿â
 	private String url = "jdbc:mysql://localhost:3306/erp";
 	private String user = "root";
-	private String password = "yourpassword";
+	private String password = "1018222wxw";
 	
 
 	public ForgetPasswordView() {
