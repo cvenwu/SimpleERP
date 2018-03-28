@@ -10,9 +10,6 @@ Target Server Type    : MYSQL
 Target Server Version : 50527
 File Encoding         : 65001
 
-
-
-File Encoding         : UTF-8
 Date: 2017-05-07 17:57:07
 */
 
